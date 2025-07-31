@@ -4,13 +4,13 @@ const treinos = [
     tecnica: "Drop-set + Cadência 3s descida",
     objetivo: "Volumizar peitoral e ativar estabilizadores",
     exercicios: [
-      ["Supino reto com barra", "4", "10-8-6", "Drop-set na última"],
-      ["Supino inclinado com halteres", "3", "10", "Cadência 3s"],
-      ["Crucifixo máquina", "3", "12", ""],
-      ["Tríceps pulley corda", "3", "15", ""],
-      ["Tríceps banco (peso livre)", "3", "10", ""],
-      ["Prancha abdominal", "3", "40 seg", ""],
-      ["Elevação de pernas", "3", "15", ""]
+      { nome: "Supino reto com barra", series: "4", reps: "10-8-6", tecnica: "Drop-set na última", obs: "" },
+      { nome: "Supino inclinado com halteres", series: "3", reps: "10", tecnica: "Cadência 3s", obs: "" },
+      { nome: "Crucifixo máquina", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Tríceps pulley corda", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Tríceps banco (peso livre)", series: "3", reps: "10", tecnica: "", obs: "" },
+      { nome: "Prancha abdominal", series: "3", reps: "40 seg", tecnica: "", obs: "" },
+      { nome: "Elevação de pernas", series: "3", reps: "15", tecnica: "", obs: "" }
     ]
   },
   {
@@ -18,12 +18,12 @@ const treinos = [
     tecnica: "Bi-set + Rest-pause",
     objetivo: "Abertura e densidade dorsal",
     exercicios: [
-      ["Puxada frente pegada aberta", "4", "12", ""],
-      ["Remada curvada com barra", "3", "10", ""],
-      ["Pulldown com triangulo", "3", "12", "Rest-pause"],
-      ["Rosca direta com barra", "3", "10", ""],
-      ["Rosca martelo + Rosca concentrada", "3", "12+10", "Bi-set"],
-      ["Encolhimento halteres", "3", "20", ""]
+      { nome: "Puxada frente pegada aberta", series: "4", reps: "12", tecnica: "", obs: "" },
+      { nome: "Remada curvada com barra", series: "3", reps: "10", tecnica: "", obs: "" },
+      { nome: "Pulldown com triangulo", series: "3", reps: "12", tecnica: "Rest-pause", obs: "" },
+      { nome: "Rosca direta com barra", series: "3", reps: "10", tecnica: "", obs: "" },
+      { nome: "Rosca martelo + Rosca concentrada", series: "3", reps: "12+10", tecnica: "Bi-set", obs: "" },
+      { nome: "Encolhimento halteres", series: "3", reps: "20", tecnica: "", obs: "" }
     ]
   },
   {
@@ -31,12 +31,12 @@ const treinos = [
     tecnica: "Cadência + Bi-set",
     objetivo: "Fortalecimento total de MMII",
     exercicios: [
-      ["Agachamento livre", "4", "10", "Cadência 3s"],
-      ["Leg press 45° + Cadeira extensora", "3", "12+15", "Bi-set"],
-      ["Mesa flexora", "4", "12", ""],
-      ["Passada com halteres", "3", "10 cada perna", ""],
-      ["Glúteo na polia", "3", "15", ""],
-      ["Panturrilha sentada", "4", "20", ""]
+      { nome: "Agachamento livre", series: "4", reps: "10", tecnica: "Cadência 3s", obs: "" },
+      { nome: "Leg press 45° + Cadeira extensora", series: "3", reps: "12+15", tecnica: "Bi-set", obs: "" },
+      { nome: "Mesa flexora", series: "4", reps: "12", tecnica: "", obs: "" },
+      { nome: "Passada com halteres", series: "3", reps: "10 cada perna", tecnica: "", obs: "" },
+      { nome: "Glúteo na polia", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Panturrilha sentada", series: "4", reps: "20", tecnica: "", obs: "" }
     ]
   },
   {
@@ -44,11 +44,11 @@ const treinos = [
     tecnica: "Circuito + Drop-set",
     objetivo: "Estética, resistência e definição",
     exercicios: [
-      ["Elevação lateral + Elevação frontal", "3", "12+12", "Bi-set"],
-      ["Desenvolvimento com halteres", "3", "10", "Drop-set na última"],
-      ["Remada alta com barra", "3", "12", ""],
-      ["Abdominal infra + prancha lateral", "3", "15 + 30s", "Bi-set"],
-      ["Corrida leve", "-", "5km", "Ritmo moderado"]
+      { nome: "Elevação lateral + Elevação frontal", series: "3", reps: "12+12", tecnica: "Bi-set", obs: "" },
+      { nome: "Desenvolvimento com halteres", series: "3", reps: "10", tecnica: "Drop-set na última", obs: "" },
+      { nome: "Remada alta com barra", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Abdominal infra + prancha lateral", series: "3", reps: "15 + 30s", tecnica: "Bi-set", obs: "" },
+      { nome: "Corrida leve", series: "-", reps: "5km", tecnica: "Ritmo moderado", obs: "Regenerativo" }
     ]
   }
 ];
