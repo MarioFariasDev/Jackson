@@ -1,42 +1,44 @@
-const treinos = [
+const treinosSemana2 = [
   {
     dia: "DIA 1 – PEITO + TRÍCEPS + CORE",
-    tecnica: "Drop-set + Cadência 3s descida",
-    objetivo: "Volumizar peitoral e ativar estabilizadores",
+    tecnica: "FST-7 no final + Cadência",
+    objetivo: "Estimular volume e vascularização",
     exercicios: [
-      { nome: "Supino reto com barra", series: "4", reps: "10-8-6", tecnica: "Drop-set na última", obs: "" },
-      { nome: "Supino inclinado com halteres", series: "3", reps: "10", tecnica: "Cadência 3s", obs: "" },
-      { nome: "Crucifixo máquina", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Tríceps pulley corda", series: "3", reps: "15", tecnica: "", obs: "" },
-      { nome: "Tríceps banco (peso livre)", series: "3", reps: "10", tecnica: "", obs: "" },
-      { nome: "Prancha abdominal", series: "3", reps: "40 seg", tecnica: "", obs: "" },
-      { nome: "Elevação de pernas", series: "3", reps: "15", tecnica: "", obs: "" }
+      { nome: "Supino inclinado com barra", series: "4", reps: "10", tecnica: "", obs: "" },
+      { nome: "Supino reto com halteres", series: "3", reps: "10", tecnica: "Cadência 3s descida", obs: "" },
+      { nome: "Crossover polia alta", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Tríceps testa com barra", series: "3", reps: "10", tecnica: "", obs: "" },
+      { nome: "Tríceps francês unilateral", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Crucifixo máquina", series: "7", reps: "12", tecnica: "FST-7", obs: "30s descanso" },
+      { nome: "Abdominal canivete", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Prancha com apoio frontal", series: "3", reps: "40s", tecnica: "", obs: "" }
     ]
   },
   {
     dia: "DIA 2 – COSTAS + BÍCEPS",
-    tecnica: "Bi-set + Rest-pause",
-    objetivo: "Abertura e densidade dorsal",
+    tecnica: "Rest-pause + Bi-set",
+    objetivo: "Densidade e pico de bíceps",
     exercicios: [
-      { nome: "Puxada frente pegada aberta", series: "4", reps: "12", tecnica: "", obs: "" },
-      { nome: "Remada curvada com barra", series: "3", reps: "10", tecnica: "", obs: "" },
-      { nome: "Pulldown com triangulo", series: "3", reps: "12", tecnica: "Rest-pause", obs: "" },
-      { nome: "Rosca direta com barra", series: "3", reps: "10", tecnica: "", obs: "" },
-      { nome: "Rosca martelo + Rosca concentrada", series: "3", reps: "12+10", tecnica: "Bi-set", obs: "" },
-      { nome: "Encolhimento halteres", series: "3", reps: "20", tecnica: "", obs: "" }
+      { nome: "Barra fixa assistida", series: "4", reps: "8", tecnica: "", obs: "" },
+      { nome: "Remada baixa na polia", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Pullover com halteres", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Rosca direta + Rosca alternada", series: "3", reps: "10+10", tecnica: "Bi-set", obs: "" },
+      { nome: "Rosca concentrada unilateral", series: "3", reps: "10", tecnica: "Rest-pause", obs: "" },
+      { nome: "Encolhimento na máquina", series: "4", reps: "15", tecnica: "", obs: "" }
     ]
   },
   {
     dia: "DIA 3 – PERNAS COMPLETAS",
-    tecnica: "Cadência + Bi-set",
-    objetivo: "Fortalecimento total de MMII",
+    tecnica: "Drop-set + Foco unilateral",
+    objetivo: "Volume e simetria dos MMII",
     exercicios: [
-      { nome: "Agachamento livre", series: "4", reps: "10", tecnica: "Cadência 3s", obs: "" },
-      { nome: "Leg press 45° + Cadeira extensora", series: "3", reps: "12+15", tecnica: "Bi-set", obs: "" },
-      { nome: "Mesa flexora", series: "4", reps: "12", tecnica: "", obs: "" },
-      { nome: "Passada com halteres", series: "3", reps: "10 cada perna", tecnica: "", obs: "" },
-      { nome: "Glúteo na polia", series: "3", reps: "15", tecnica: "", obs: "" },
-      { nome: "Panturrilha sentada", series: "4", reps: "20", tecnica: "", obs: "" }
+      { nome: "Leg press 45°", series: "4", reps: "12", tecnica: "Drop-set na última", obs: "" },
+      { nome: "Agachamento búlgaro", series: "3", reps: "10 cada perna", tecnica: "", obs: "" },
+      { nome: "Cadeira extensora", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Cadeira flexora", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Stiff com halteres", series: "3", reps: "10", tecnica: "", obs: "" },
+      { nome: "Glúteo com caneleira", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Panturrilha no leg press", series: "4", reps: "20", tecnica: "", obs: "" }
     ]
   },
   {
@@ -44,14 +46,17 @@ const treinos = [
     tecnica: "Circuito + Drop-set",
     objetivo: "Estética, resistência e definição",
     exercicios: [
-      { nome: "Elevação lateral + Elevação frontal", series: "3", reps: "12+12", tecnica: "Bi-set", obs: "" },
-      { nome: "Desenvolvimento com halteres", series: "3", reps: "10", tecnica: "Drop-set na última", obs: "" },
-      { nome: "Remada alta com barra", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Abdominal infra + prancha lateral", series: "3", reps: "15 + 30s", tecnica: "Bi-set", obs: "" },
-      { nome: "Corrida leve", series: "-", reps: "5km", tecnica: "Ritmo moderado", obs: "Regenerativo" }
+      { nome: "Desenvolvimento na máquina", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Elevação lateral", series: "3", reps: "15/10/8", tecnica: "Drop-set", obs: "" },
+      { nome: "Crucifixo inverso no peck deck", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Encolhimento com barra por trás", series: "3", reps: "20", tecnica: "", obs: "" },
+      { nome: "Abdominal com anilha", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Prancha lateral com rotação", series: "3", reps: "30s", tecnica: "", obs: "" },
+      { nome: "Corrida leve", series: "-", reps: "5km", tecnica: "Ritmo regenerativo", obs: "" }
     ]
   }
 ];
+
 
 
 
@@ -151,3 +156,4 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
   localStorage.setItem("feedbackGlobal", feedback.value);
   alert("Feedback salvo com sucesso!");
 });
+
