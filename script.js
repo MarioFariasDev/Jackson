@@ -1,4 +1,4 @@
-const treinosSemana2 = [
+const treinos = [
   {
     dia: "DIA 1 – PEITO + TRÍCEPS + CORE",
     tecnica: "FST-7 no final + Cadência",
@@ -156,4 +156,5 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
   localStorage.setItem("feedbackGlobal", feedback.value);
   alert("Feedback salvo com sucesso!");
 });
+
 
