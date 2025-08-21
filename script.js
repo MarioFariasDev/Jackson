@@ -1,57 +1,55 @@
 const treinos = [
   {
     dia: "DIA 1 – PEITO + TRÍCEPS + CORE",
-    tecnica: "FST-7 no final + Cadência",
-    objetivo: "Estimular volume e vascularização",
+    tecnica: "Superset + Isometria final",
+    objetivo: "Explosão de força e volume",
     exercicios: [
-      { nome: "Supino inclinado com barra", series: "4", reps: "10", tecnica: "", obs: "" },
-      { nome: "Supino reto com halteres", series: "3", reps: "10", tecnica: "Cadência 3s descida", obs: "" },
-      { nome: "Crossover polia alta", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Tríceps testa com barra", series: "3", reps: "10", tecnica: "", obs: "" },
-      { nome: "Tríceps francês unilateral", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Crucifixo máquina", series: "7", reps: "12", tecnica: "FST-7", obs: "30s descanso" },
-      { nome: "Abdominal canivete", series: "3", reps: "15", tecnica: "", obs: "" },
-      { nome: "Prancha com apoio frontal", series: "3", reps: "40s", tecnica: "", obs: "" }
+      { nome: "Supino reto barra + Flexão explosiva", series: "4", reps: "8+10", tecnica: "Superset", obs: "" },
+      { nome: "Supino inclinado halteres", series: "3", reps: "10", tecnica: "Cadência 3-0-1", obs: "" },
+      { nome: "Crossover polia baixa", series: "3", reps: "12", tecnica: "Isometria final 10s", obs: "" },
+      { nome: "Tríceps corda", series: "3", reps: "12", tecnica: "Rest-pause na última", obs: "" },
+      { nome: "Tríceps mergulho paralela", series: "3", reps: "8-10", tecnica: "", obs: "" },
+      { nome: "Abdominal infra com bola", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Prancha dinâmica", series: "3", reps: "30s", tecnica: "", obs: "" }
     ]
   },
   {
     dia: "DIA 2 – COSTAS + BÍCEPS",
-    tecnica: "Rest-pause + Bi-set",
-    objetivo: "Densidade e pico de bíceps",
+    tecnica: "Bi-set + Rest-pause",
+    objetivo: "Densidade e força de puxada",
     exercicios: [
-      { nome: "Barra fixa assistida", series: "4", reps: "8", tecnica: "", obs: "" },
-      { nome: "Remada baixa na polia", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Pullover com halteres", series: "3", reps: "15", tecnica: "", obs: "" },
-      { nome: "Rosca direta + Rosca alternada", series: "3", reps: "10+10", tecnica: "Bi-set", obs: "" },
-      { nome: "Rosca concentrada unilateral", series: "3", reps: "10", tecnica: "Rest-pause", obs: "" },
-      { nome: "Encolhimento na máquina", series: "4", reps: "15", tecnica: "", obs: "" }
+      { nome: "Puxada frente pegada supinada", series: "4", reps: "10", tecnica: "", obs: "" },
+      { nome: "Remada curvada + Pullover", series: "3", reps: "10+12", tecnica: "Bi-set", obs: "" },
+      { nome: "Remada unilateral halteres", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Rosca direta barra", series: "3", reps: "10", tecnica: "Rest-pause", obs: "" },
+      { nome: "Rosca 21", series: "3", reps: "21", tecnica: "7 baixa, 7 alta, 7 completa", obs: "" },
+      { nome: "Encolhimento halteres", series: "4", reps: "20", tecnica: "", obs: "" }
     ]
   },
   {
     dia: "DIA 3 – PERNAS COMPLETAS",
-    tecnica: "Drop-set + Foco unilateral",
-    objetivo: "Volume e simetria dos MMII",
+    tecnica: "Superset + Drop-set",
+    objetivo: "Volume, simetria e resistência",
     exercicios: [
-      { nome: "Leg press 45°", series: "4", reps: "12", tecnica: "Drop-set na última", obs: "" },
-      { nome: "Agachamento búlgaro", series: "3", reps: "10 cada perna", tecnica: "", obs: "" },
-      { nome: "Cadeira extensora", series: "3", reps: "15", tecnica: "", obs: "" },
-      { nome: "Cadeira flexora", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Stiff com halteres", series: "3", reps: "10", tecnica: "", obs: "" },
-      { nome: "Glúteo com caneleira", series: "3", reps: "15", tecnica: "", obs: "" },
-      { nome: "Panturrilha no leg press", series: "4", reps: "20", tecnica: "", obs: "" }
+      { nome: "Agachamento livre", series: "4", reps: "10", tecnica: "Cadência 3-0-1", obs: "" },
+      { nome: "Avanço + Cadeira extensora", series: "3", reps: "12+15", tecnica: "Superset", obs: "" },
+      { nome: "Cadeira flexora", series: "3", reps: "12", tecnica: "Drop-set na última", obs: "" },
+      { nome: "Stiff com barra", series: "3", reps: "10", tecnica: "", obs: "" },
+      { nome: "Glúteo 4 apoios polia", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Panturrilha em pé", series: "5", reps: "20", tecnica: "", obs: "" }
     ]
   },
   {
     dia: "DIA 4 – OMBROS + CORE + CORRIDA",
-    tecnica: "Circuito + Drop-set",
-    objetivo: "Estética, resistência e definição",
+    tecnica: "Circuito + Superset",
+    objetivo: "Estética e condicionamento",
     exercicios: [
-      { nome: "Desenvolvimento na máquina", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Elevação lateral", series: "3", reps: "15/10/8", tecnica: "Drop-set", obs: "" },
-      { nome: "Crucifixo inverso no peck deck", series: "3", reps: "12", tecnica: "", obs: "" },
-      { nome: "Encolhimento com barra por trás", series: "3", reps: "20", tecnica: "", obs: "" },
-      { nome: "Abdominal com anilha", series: "3", reps: "15", tecnica: "", obs: "" },
-      { nome: "Prancha lateral com rotação", series: "3", reps: "30s", tecnica: "", obs: "" },
+      { nome: "Desenvolvimento militar barra", series: "4", reps: "10", tecnica: "", obs: "" },
+      { nome: "Elevação lateral + Elevação frontal", series: "3", reps: "12+12", tecnica: "Superset", obs: "" },
+      { nome: "Crucifixo inverso polia", series: "3", reps: "15", tecnica: "", obs: "" },
+      { nome: "Encolhimento halteres", series: "3", reps: "20", tecnica: "", obs: "" },
+      { nome: "Abdominal lateral com halteres", series: "3", reps: "12", tecnica: "", obs: "" },
+      { nome: "Prancha frontal + prancha lateral", series: "3", reps: "30s cada", tecnica: "Circuito", obs: "" },
       { nome: "Corrida leve", series: "-", reps: "5km", tecnica: "Ritmo regenerativo", obs: "" }
     ]
   }
@@ -156,6 +154,7 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
   localStorage.setItem("feedbackGlobal", feedback.value);
   alert("Feedback salvo com sucesso!");
 });
+
 
 
 
