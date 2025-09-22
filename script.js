@@ -4,13 +4,13 @@ const treinos = [
     tecnica: "Pré-exaustão + Reverse Pyramid",
     objetivo: "Estímulo global com foco em peito e tríceps",
     exercicios: [
-      ["Crossover polia baixa", "3", "15", "Pré-exaustão", "Alongamento completo"],
-      ["Supino reto barra", "4", "6-8-10-12", "Reverse pyramid", "Reduz carga a cada série"],
-      ["Agachamento frontal", "3", "10", "-", "Core firme e postura ereta"],
-      ["Remada baixa máquina", "3", "10", "Cadência 3-0-2", "Controle na fase excêntrica"],
-      ["Tríceps francês barra W", "3", "12", "-", "Cotovelos estáveis"],
-      ["Rosca direta barra", "3", "12", "-", "Pico na contração"],
-      ["Prancha com elevação de pernas", "3", "30s + 15", "Bi-set", "Core ativo"]
+      { nome: "Crossover polia baixa", series: "3", reps: "15", tecnica: "Pré-exaustão", obs: "Alongamento completo" },
+      { nome: "Supino reto barra", series: "4", reps: "6-8-10-12", tecnica: "Reverse pyramid", obs: "Reduz carga a cada série" },
+      { nome: "Agachamento frontal", series: "3", reps: "10", tecnica: "-", obs: "Core firme e postura ereta" },
+      { nome: "Remada baixa máquina", series: "3", reps: "10", tecnica: "Cadência 3-0-2", obs: "Controle na fase excêntrica" },
+      { nome: "Tríceps francês barra W", series: "3", reps: "12", tecnica: "-", obs: "Cotovelos estáveis" },
+      { nome: "Rosca direta barra", series: "3", reps: "12", tecnica: "-", obs: "Pico na contração" },
+      { nome: "Prancha com elevação de pernas", series: "3", reps: "30s + 15", tecnica: "Bi-set", obs: "Core ativo" }
     ]
   },
   {
@@ -18,13 +18,13 @@ const treinos = [
     tecnica: "Cluster set + Drop-set",
     objetivo: "Espessura dorsal e pico de bíceps",
     exercicios: [
-      ["Puxada frente pegada supinada", "4", "10", "Cadência 3-1-1", "Controle no retorno"],
-      ["Remada curvada barra", "3", "8", "Cluster set", "4x2 reps com pausas curtas"],
-      ["Stiff com halteres", "3", "10", "3s descida", "Explosivo na subida"],
-      ["Supino inclinado halteres", "3", "10", "-", "Peitoral superior ativo"],
-      ["Rosca direta barra", "3", "10", "Drop-set final", "Última série até falha"],
-      ["Rosca alternada inclinada", "3", "12", "-", "Rotação completa"],
-      ["Crunch com peso + prancha", "3", "15 + 30s", "Bi-set", "Core completo"]
+      { nome: "Puxada frente pegada supinada", series: "4", reps: "10", tecnica: "Cadência 3-1-1", obs: "Controle no retorno" },
+      { nome: "Remada curvada barra", series: "3", reps: "8", tecnica: "Cluster set", obs: "4x2 reps com pausas curtas" },
+      { nome: "Stiff com halteres", series: "3", reps: "10", tecnica: "3s descida", obs: "Explosivo na subida" },
+      { nome: "Supino inclinado halteres", series: "3", reps: "10", tecnica: "-", obs: "Peitoral superior ativo" },
+      { nome: "Rosca direta barra", series: "3", reps: "10", tecnica: "Drop-set final", obs: "Última série até falha" },
+      { nome: "Rosca alternada inclinada", series: "3", reps: "12", tecnica: "-", obs: "Rotação completa" },
+      { nome: "Crunch com peso + prancha", series: "3", reps: "15 + 30s", tecnica: "Bi-set", obs: "Core completo" }
     ]
   },
   {
@@ -32,13 +32,13 @@ const treinos = [
     tecnica: "Tensão contínua + Isometria",
     objetivo: "Ênfase em inferiores com estímulo global",
     exercicios: [
-      ["Agachamento livre", "4", "8-10", "-", "Foco em técnica perfeita"],
-      ["Passada com halteres", "3", "10/10", "-", "Controle profundo"],
-      ["Supino inclinado barra", "3", "8", "-", "Força máxima"],
-      ["Remada unilateral halter", "3", "12", "-", "Conexão mente-músculo"],
-      ["Elevação lateral halteres", "3", "12", "-", "Amplitude total"],
-      ["Tríceps corda", "3", "12-15", "-", "Última até falha"],
-      ["Prancha lateral + abdominal oblíquo", "3", "30s + 15", "Bi-set", "Estabilidade do core"]
+      { nome: "Agachamento livre", series: "4", reps: "8-10", tecnica: "-", obs: "Foco em técnica perfeita" },
+      { nome: "Passada com halteres", series: "3", reps: "10/10", tecnica: "-", obs: "Controle profundo" },
+      { nome: "Supino inclinado barra", series: "3", reps: "8", tecnica: "-", obs: "Força máxima" },
+      { nome: "Remada unilateral halter", series: "3", reps: "12", tecnica: "-", obs: "Conexão mente-músculo" },
+      { nome: "Elevação lateral halteres", series: "3", reps: "12", tecnica: "-", obs: "Amplitude total" },
+      { nome: "Tríceps corda", series: "3", reps: "12-15", tecnica: "-", obs: "Última até falha" },
+      { nome: "Prancha lateral + abdominal oblíquo", series: "3", reps: "30s + 15", tecnica: "Bi-set", obs: "Estabilidade do core" }
     ]
   },
   {
@@ -46,13 +46,13 @@ const treinos = [
     tecnica: "Supersérie + Pump",
     objetivo: "Densidade estética de ombros e braços",
     exercicios: [
-      ["Desenvolvimento halteres", "4", "8-10", "-", "Amplitude total"],
-      ["Elevação lateral + frontal", "3", "12+12", "Supersérie", "Sem descanso"],
-      ["Supino reto halteres", "3", "10", "-", "Foco em contração"],
-      ["Rosca direta + martelo", "3", "10+10", "Bi-set", "Pump de bíceps"],
-      ["Tríceps francês + tríceps banco", "3", "12+falha", "Bi-set", "Exaustão final"],
-      ["Crossover 3 ângulos", "3", "15", "Pump final", "Estético total"],
-      ["Abdominal supra com peso", "3", "15", "-", "Controle de lombar"]
+      { nome: "Desenvolvimento halteres", series: "4", reps: "8-10", tecnica: "-", obs: "Amplitude total" },
+      { nome: "Elevação lateral + frontal", series: "3", reps: "12+12", tecnica: "Supersérie", obs: "Sem descanso" },
+      { nome: "Supino reto halteres", series: "3", reps: "10", tecnica: "-", obs: "Foco em contração" },
+      { nome: "Rosca direta + martelo", series: "3", reps: "10+10", tecnica: "Bi-set", obs: "Pump de bíceps" },
+      { nome: "Tríceps francês + tríceps banco", series: "3", reps: "12+falha", tecnica: "Bi-set", obs: "Exaustão final" },
+      { nome: "Crossover 3 ângulos", series: "3", reps: "15", tecnica: "Pump final", obs: "Estético total" },
+      { nome: "Abdominal supra com peso", series: "3", reps: "15", tecnica: "-", obs: "Controle de lombar" }
     ]
   }
 ];
@@ -153,6 +153,7 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
   localStorage.setItem("feedbackGlobal", feedback.value);
   alert("Feedback salvo com sucesso!");
 });
+
 
 
 
